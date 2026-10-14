@@ -162,7 +162,107 @@ nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:9px 12px}nav a
 @media(max-width:360px){nav a{font-size:10px;padding:9px 3px}}
 .carpa-lead-photos{display:grid;grid-template-columns:1fr 1fr;gap:8px}.carpa-lead-photos a{background:#f8f2f5;overflow:hidden;border-radius:11px;text-align:center;text-decoration:none;font-size:10px;font-weight:800;color:#81234e}.carpa-lead-photos img{display:block;width:100%;height:180px;object-fit:contain}.carpa-lead-photos span{display:block;padding:7px}.visible-history{display:grid;grid-template-columns:108px 1fr;gap:12px;align-items:center;border:1px solid #eadce2;border-radius:13px;padding:12px;margin-top:11px}.visible-history img{width:108px;height:142px;object-fit:contain}.visible-history span{font-size:10px;color:#8c677a;font-weight:800}.visible-history strong{display:block;color:#81234e;font:800 25px Manrope,Arial}.visible-history p{font-size:11px;margin:4px 0}.history-values{display:flex;flex-wrap:wrap;gap:7px}.history-values b{font-size:14px;color:#81234e}.history-values small{display:block;color:#70606a;font-size:9px}.offer-list{display:grid;gap:8px}.offer-line{border:1px solid #e9dce2;border-radius:12px;padding:12px;background:white}.offer-line.best{background:#f9eaf1;border-color:#e7c8d7}.offer-line.pending{border-style:dashed;color:#72616b}.offer-line b{font-size:12px}.offer-line small{display:block;font-size:10px;color:#796673;margin:2px 0 6px}.offer-line span{display:block;font-size:11px;line-height:1.5}.offer-line strong{display:block;color:#7e204a;font:800 16px/1.3 Manrope,Arial;margin-top:5px}@media(max-width:360px){.carpa-lead-photos img{height:145px}.visible-history{grid-template-columns:88px 1fr}.visible-history img{width:88px;height:123px}.visible-history strong{font-size:21px}.history-values b{font-size:12px}}#rompetraficos .executive-intro ul{font-size:12px}#rompetraficos .executive-intro li{margin:6px 0}
 .media-real-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:11px}.media-real-gallery a{border-radius:11px;overflow:hidden;background:#f8f3f5;text-decoration:none;color:#81234e;font-size:10px;font-weight:800;text-align:center}.media-real-gallery img{display:block;width:100%;height:170px;object-fit:contain}.media-real-gallery span{display:block;padding:7px}
-.small-subheading{font-size:14px;margin:16px 0 8px}.tier-list{font-size:11px;line-height:1.4}.tier-list p{margin:7px 0}</style></head><body><div class="app"><header><div class="top"><span class="eyebrow">BITÁCORA 2026 · GERENCIA</span><span class="date">13 OCT 2026</span></div><h1>Bitácora 2026<br>Resumen gerencial</h1></header>
+.small-subheading{font-size:14px;margin:16px 0 8px}.tier-list{font-size:11px;line-height:1.4}.tier-list p{margin:7px 0}
+/* Vista horizontal para presentación en computador */
+@media (min-width: 1024px) {
+  :root{background:#eae4e7}
+  body{padding:0}
+  .app{max-width:1680px;min-height:100vh;margin:0 auto;box-shadow:0 20px 100px #39142118}
+  header{padding:26px clamp(32px,4vw,70px) 22px}
+  header h1{font-size:38px;line-height:1.08;margin:9px 0 0}
+  header .top .eyebrow{font-size:12px}
+  header .date{font-size:12px;padding:8px 12px}
+  nav{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;padding:16px clamp(32px,4vw,70px);position:sticky;top:0;box-shadow:0 5px 20px #3914210d}
+  nav a{font-size:15px;line-height:1.2;min-height:52px;padding:12px 8px;border-radius:13px}
+  main.category-panel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:20px 22px;padding:28px clamp(32px,4vw,70px) 42px}
+  main.category-panel>.chapter{grid-column:1/-1;display:block;padding:19px 26px;margin:0;border-radius:18px}
+  main.category-panel>.chapter h2{font-size:34px;line-height:1.12}
+  main.category-panel>.chapter p{font-size:16px;line-height:1.5;margin-top:5px}
+  main.category-panel>section{min-width:0;margin:0;padding:22px 24px;border:1px solid #eee4e9;border-radius:18px;background:white;box-shadow:0 8px 25px #3b14200b}
+  main.category-panel .heading{margin-bottom:15px}
+  main.category-panel .heading .eyebrow{font-size:11px;letter-spacing:.12em}
+  main.category-panel .heading h2{font-size:23px;line-height:1.2}
+  main.category-panel p,main.category-panel li,main.category-panel .caption{font-size:14px;line-height:1.5}
+  main.category-panel .caption{margin-top:11px}
+  main.category-panel .buttons a{font-size:13px;padding:11px 13px}
+  .offer-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+  .offer-line{padding:16px;border-radius:13px;min-height:103px}
+  .offer-line b{font-size:14px}
+  .offer-line span{font-size:12px}
+  .offer-line small{font-size:11px}
+  .offer-line strong{font-size:18px}
+  .offer-line.pending{grid-column:1/-1;min-height:0}
+  .executive-total strong{font-size:37px}
+  .carpa-lead-photos img{height:230px}
+  .visible-history{grid-template-columns:155px 1fr;padding:17px;gap:19px}
+  .visible-history img{width:155px;height:185px}
+  .visible-history span{font-size:12px}
+  .visible-history strong{font-size:34px}
+  .visible-history p{font-size:14px}
+  .history-values{gap:17px}
+  .history-values b{font-size:20px}
+  .history-values small{font-size:12px}
+  #carpas .photos a{min-width:43%;aspect-ratio:4/3}
+  #carpas .photos span{font-size:13px}
+  #rompetraficos .traffic-intro{grid-template-columns:minmax(0,1fr) 160px;align-items:center}
+  #rompetraficos .traffic-intro img{height:150px;max-width:160px;object-fit:contain}
+  #rompetraficos .executive-intro{grid-template-columns:190px 1fr;gap:21px}
+  #rompetraficos .executive-intro img{height:245px}
+  #rompetraficos .executive-intro ul{font-size:15px}
+  #rompetraficos .traffic-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #rompetraficos .traffic-gallery img{height:180px}
+  #medias .metric-row{gap:12px}
+  #medias .metric-row div{padding:15px}
+  #medias .metric-row strong{font-size:36px}
+  #medias .metric-row span{font-size:13px}
+  #medias .medias-feature{grid-template-columns:155px 1fr;padding:16px}
+  #medias .medias-feature img{width:155px;height:190px}
+  #medias .media-real-gallery{gap:12px}
+  #medias .media-real-gallery img{height:210px}
+  #medias .media-real-gallery span{font-size:12px}
+  #bags .bag-hero{grid-template-columns:145px 1fr;padding:18px}
+  #bags .bag-hero img{width:145px;height:175px}
+  #bags .bag-hero strong{font-size:57px}
+  #bags .bag-hero span{font-size:17px}
+  #bags .bag-hero p{font-size:13px}
+  #bags .bag-stats{gap:10px}
+  #bags .bag-stats div{padding:13px 15px}
+  #bags .bag-stats strong{font-size:31px}
+  #bags .bag-stats span{font-size:12px}
+  #bags .bag-options{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  #bags .bag-option{padding:17px}
+  #bags .bag-option strong{font-size:41px}
+  #bags .bag-option p{font-size:13px}
+  #bags .bag-sum{display:block}
+  #bags .bag-sum b{display:block;font-size:23px;margin-top:4px}
+  #bags .bag-unit{font-size:12px}
+  #bags .bag-unit b{font-size:14px}
+  #nineras .nin-hero{grid-template-columns:155px 1fr;padding:17px}
+  #nineras .nin-hero a{width:155px;height:195px}
+  #nineras .nin-hero strong{font-size:60px}
+  #nineras .nin-hero span{font-size:17px}
+  #nineras .nin-hero p{font-size:13px}
+  #nineras .nin-actions{gap:10px}
+  #nineras .nin-actions div{padding:13px}
+  #nineras .nin-actions strong{font-size:35px}
+  #nineras .nin-actions b{font-size:13px}
+  #nineras .nin-actions span{font-size:12px}
+  #nineras .nin-inventory strong{font-size:19px}
+  #nineras .nin-inventory p{font-size:12px}
+  #nineras .nin-gallery img{height:195px}
+  #gancheras>section:last-child{grid-column:1/-1}
+  footer{font-size:12px;padding:20px clamp(32px,4vw,70px)}
+}
+@media (min-width: 1024px) and (max-width: 1199px){
+  main.category-panel{gap:14px;padding:20px 24px 32px}
+  main.category-panel>section{padding:17px}
+  nav{gap:8px;padding:12px 24px}
+  nav a{font-size:12px}
+  .offer-list{grid-template-columns:1fr}
+  .offer-line.pending{grid-column:auto}
+  #bags .bag-options{grid-template-columns:1fr}
+}
+</style></head><body><div class="app"><header><div class="top"><span class="eyebrow">BITÁCORA 2026 · GERENCIA</span><span class="date">14 OCT 2026</span></div><h1>Bitácora 2026<br>Resumen gerencial</h1></header>
 <nav aria-label="Categorías"><a class="active" href="#carpas" data-category="carpas">Carpas</a><a href="#rompetraficos" data-category="rompetraficos">Rompetráficos</a><a href="#medias" data-category="medias">Muebles de medias</a><a href="#bags" data-category="bags">Shopping Bag</a><a href="#nineras" data-category="nineras">Niñeras</a><a href="#gancheras" data-category="gancheras">Gancheras</a></nav><main class="category-panel" id="carpas">
 <div class="chapter"><h2>Carpas 2 × 2 metros</h2><p>Solicitud comercial: 17 carpas para reposición y nuevas oportunidades de venta.</p></div>
 <section><div class="heading"><div><div class="eyebrow muted">01 · ESTADO ACTUAL</div><h2>7 carpas dañadas · 5 reposiciones</h2></div></div><div class="carpa-lead-photos"><a href="https://levantamientos-tiendas-lilipink.cristo886.chatgpt.site/assets/cotizacion-carpa/estado-7.webp" target="_blank"><img alt="Vista completa de la carpa en tienda" loading="lazy" src="https://levantamientos-tiendas-lilipink.cristo886.chatgpt.site/assets/cotizacion-carpa/estado-7.webp"/><span>Carpa completa ↗</span></a><a href="https://levantamientos-tiendas-lilipink.cristo886.chatgpt.site/assets/cotizacion-carpa/estado-2.webp" target="_blank"><img alt="Daño visible de lona" loading="lazy" src="https://levantamientos-tiendas-lilipink.cristo886.chatgpt.site/assets/cotizacion-carpa/estado-2.webp"/><span>Daño de lona ↗</span></a></div><p class="executive-copy">De <b>22 tiendas revisadas</b>, 7 reportaron carpas dañadas. Comercial confirmó <b>5 reposiciones</b>.</p><div class="visible-history"><img alt="Carpa 2 × 2 comprada en 2025" loading="lazy" src="https://levantamientos-tiendas-lilipink.cristo886.chatgpt.site/assets/cotizacion-carpa/producto-china.webp"/><div><span>COMPRA 2025 · CONTENEDOR</span><strong>25M-18</strong><p>20 carpas de 2 × 2 m</p><div class="history-values"><b>$465.206 <small>por carpa</small></b><b>$9.304.120 <small>compra total</small></b></div></div></div></section>
