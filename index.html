@@ -445,6 +445,38 @@ main.category-panel .evidence-rail>a img{height:290px;width:auto;max-width:100%;
  #nineras .nin-hero img{width:120px;height:155px}
  #resumen .summary-totals{grid-template-columns:1fr}
 }
+
+/* Balance final de tarjetas para pantalla de presentación */
+@media(min-width:1024px){
+ #rompetraficos .traffic-state-layout{grid-template-columns:minmax(180px,47%) minmax(0,1fr);height:calc(100% - 58px)}
+ #rompetraficos .traffic-photo{min-width:0}
+ #rompetraficos .traffic-photo img{height:clamp(300px,28vw,435px);max-width:100%}
+ #rompetraficos .traffic-action-list{justify-content:space-around}
+ #rompetraficos .traffic-action-list>div{padding:17px}
+ #medias .quad-state{display:flex;flex-direction:column;justify-content:space-between}
+ #medias .medias-feature img{height:260px}
+ #medias .media-state-photos img{height:185px}
+ #bags .quad-state{display:flex;flex-direction:column;justify-content:center}
+ #bags .bag-product{margin:0 auto 18px;width:min(100%,340px)}
+ #bags .bag-product img{height:290px}
+ #bags .bag-context{margin-top:16px}
+ #gancheras .quad-state{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+ #gancheras .ganchera-product{width:min(100%,470px)}
+ #gancheras .ganchera-product img{height:250px}
+ #gancheras .executive-copy{max-width:470px}
+ #nineras .nin-hero{grid-template-columns:185px minmax(0,1fr)}
+ #nineras .nin-hero a,#nineras .nin-hero img{width:185px;height:240px}
+}
+@media(min-width:1024px) and (max-width:1199px){
+ #rompetraficos .traffic-state-layout{grid-template-columns:43% 1fr}
+ #rompetraficos .traffic-photo img{height:330px}
+ #rompetraficos .traffic-action-list>div{padding:10px}
+ #medias .medias-feature{grid-template-columns:135px 1fr}
+ #medias .medias-feature img{width:135px;height:195px}
+ #medias .media-state-photos img{height:135px}
+ #nineras .nin-hero{grid-template-columns:135px 1fr}
+ #nineras .nin-hero a,#nineras .nin-hero img{width:135px;height:175px}
+}
 </style></head><body><div class="app"><header><div class="top"><span class="eyebrow">BITÁCORA 2026 · GERENCIA</span><span class="date">14 OCT 2026</span></div><h1>Bitácora 2026<br/>Resumen gerencial</h1></header>
 <nav aria-label="Categorías"><a data-category="carpas" href="#carpas">Carpas</a><a data-category="rompetraficos" href="#rompetraficos">Rompetráficos</a><a data-category="medias" href="#medias">Muebles de medias</a><a data-category="bags" href="#bags">Shopping Bag</a><a data-category="nineras" href="#nineras">Niñeras</a><a data-category="gancheras" href="#gancheras">Gancheras</a><a class="active" data-category="resumen" href="#resumen">Resumen</a></nav><main class="category-panel" hidden="" id="resumen"><div class="chapter"><div class="eyebrow">RESUMEN GERENCIAL</div><h2>Decisiones y presupuesto</h2><p>Proyecciones sin IVA a partir de la oferta más económica disponible para cada acción.</p></div>
 <section class="quad-state"><div class="heading"><div><div class="eyebrow muted">01 · ALCANCE</div><h2>Resumen para tomar decisiones</h2></div></div><div class="summary-pills"><a href="#carpas"><b>17</b> carpas</a><a href="#rompetraficos"><b>23</b> intervenciones en rompetráficos</a><a href="#medias"><b>88</b> cajones</a><a href="#bags"><b>2</b> compras alternativas de bolsas</a><a href="#nineras"><b>28</b> niñeras para reparar</a><a href="#gancheras"><b>600 + 600</b> gancheras</a></div></section>
@@ -475,7 +507,6 @@ main.category-panel .evidence-rail>a img{height:290px;width:auto;max-width:100%;
 <div class="bag-stats"><div><strong>332</strong><span>tiendas con bolsas</span></div><div><strong>39</strong><span>tiendas sin bolsas</span></div><div><strong>129</strong><span>tiendas con bolsas dañadas</span></div><div><strong>572</strong><span>bolsas dañadas reportadas</span></div></div>
 <p class="bag-context">39 tiendas no tienen bolsas; en otras 129 se reportan unidades dañadas. La compra cubre el faltante y la necesidad comercial.</p></section>
 <section class="quad-decision presentation-card"><div class="heading"><div><div class="eyebrow muted">02 · DECISIÓN Y COSTO</div><h2>Compra negociada o mínima</h2></div></div>
-
 <div class="bag-options"><article class="bag-option"><span class="bag-option-tag">OPCIÓN 1 · IDEAL COMERCIAL</span><strong>1.572 <small>bolsas</small></strong><p>Cantidad ideal solicitada por Comercial según la operación y venta proyectada por tienda.</p><div class="bag-unit">Precio guía por bolsa <b>$10.010 sin IVA</b></div><div class="bag-sum"><span>Presupuesto guía sin IVA</span><b>$15.735.720</b></div></article>
 <article class="bag-option minimum"><span class="bag-option-tag">OPCIÓN 2 · COBERTURA MÍNIMA</span><strong>1.197 <small>bolsas</small></strong><p>Cantidad mínima según el tamaño de tienda y las bolsas útiles que ya tiene.</p><div class="bag-unit">Precio guía por bolsa <b>$10.010 sin IVA</b></div><div class="bag-sum"><span>Presupuesto guía sin IVA</span><b>$11.981.970</b></div></article></div>
 <p class="bag-delta">La opción mínima reduce el pedido en <b>375 bolsas</b> y el presupuesto estimado en <b>$3.753.750 sin IVA</b>.</p><section class="inline-quotes"><div class="heading"><div><div class="eyebrow muted">COTIZACIONES · PRECIO UNITARIO Y TOTAL</div><h2>Precio guía y comparativo</h2></div></div><div class="quote"><div class="vendor"><b>Acreart Publicidad</b><span class="badge">MENOR PRECIO EN EL COMPARATIVO</span></div><div class="price">$10.010 <small>por bolsa · sin IVA</small></div><p>Precio unitario de la cotización por 1.000 bolsas; sirve para estimar las dos opciones de compra.</p></div><h3 class="small-subheading">Excel comparativo · tramo de 200 bolsas</h3><div class="offer-list"><div class="offer-line best"><b>Acreart Publicidad</b><span>$11.330 / unidad</span><strong>$2.266.000 / 200 bolsas</strong></div><div class="offer-line"><b>Grupo Tecnocol</b><span>$15.885 / unidad</span><strong>$3.177.000 / 200 bolsas</strong></div><div class="offer-line"><b>El Dimag</b><span>$44.800 / unidad</span><strong>$8.960.000 / 200 bolsas</strong></div><div class="offer-line pending"><b>Induarizalba</b><span>Cotización pendiente de Compras</span></div></div><details class="compact-history"><summary>Ver precios por 100 y 150 bolsas</summary><div class="tier-list"><p><b>100:</b> Acreart $12.810 · Tecnocol $22.349 · El Dimag $44.800 por unidad.</p><p><b>150:</b> Acreart $11.450 · Tecnocol $19.422 · El Dimag $44.800 por unidad.</p></div></details><div class="buttons"><a href="https://drive.google.com/file/d/1JjKXHfHR6XWUXuznOQS-shNWiC3YvCxb/view" rel="noopener" target="_blank">Cotización por 1.000 ↗</a><a href="https://drive.google.com/file/d/1OEZhb0xc6nkYSDxkHf9uSB8SWDU1ZHgz/view" rel="noopener" target="_blank">Excel comparativo ↗</a></div></section></section>
